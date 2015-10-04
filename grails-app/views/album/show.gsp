@@ -88,8 +88,7 @@
 	
 			<g:render template="/common/editDeleteBlock"/>
 
-			<g:render template="/message/form" />
-			<g:render template="/message/list" />
+			<g:render template="/message/form-list" />
 
 		</div>
 	</body>

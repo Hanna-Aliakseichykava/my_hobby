@@ -28,8 +28,7 @@
 			<div class="message" role="status">${flash.message}</div>
 		</g:if>
 
-		<g:render template="/message/form" />
-		<g:render template="/message/list" />
+		<g:render template="/message/form-list" />
 
 	</div>
 

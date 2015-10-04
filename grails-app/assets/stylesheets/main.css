@@ -621,3 +621,73 @@ a.skip {
 	display: inline-block;
 	vertical-align: bottom;	
 }
+
+
+
+
+.message-list-wrapper {
+	text-align: center;
+}
+
+.messages-list {
+	width: 70%;
+	display: inline-block;
+}
+
+.message-instance {
+	background-color: white;
+	text-align: left;
+	border-radius: 20px;
+	margin-bottom: 10px;
+	width: 100%;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.author-block {
+	width: 20%;
+	display: inline-block;
+}
+
+.content-block {
+	width: 75%;
+	display: inline-block;
+	word-wrap: break-word;
+}
+
+.column {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.content-column {
+	width: 92%;
+}
+
+.links-block {
+
+}
+
+.links-block .link {
+	display: inline-block;
+	width: 20px;
+	height: 18px;
+	background-repeat: no-repeat;
+}
+
+.links-block .edit {
+	background-image: url('skin/database_edit.png');
+}
+
+.links-block .delete {
+	background-image: url('skin/database_delete.png');
+}
+
+
+.dates-block {
+	font-size: 0.7em;
+	color: gray;
+	font-style: italic;
+	padding-top: 5px;
+}

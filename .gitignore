@@ -1,2 +1,4 @@
 .groovy
 .settings
+target
+target-eclipse

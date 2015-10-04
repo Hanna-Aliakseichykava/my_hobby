@@ -5,7 +5,7 @@ import geb.Module
 /**
  * @author Hanna_Aliakseichykava
  */
-class Message extends Module {
+class FlashMessage extends Module {
     
     static content = {
         message { $("div.message", role: "status") }

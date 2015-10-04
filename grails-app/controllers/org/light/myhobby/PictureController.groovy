@@ -68,7 +68,8 @@ class PictureController extends MessageController {
 			message(code: 'picture.label', default: 'Picture'),
 			pictureInstance.id
 		])
-		render(view: "show", model: [ownerInstance: pictureInstance])
+		//render(view: "show", model: [ownerInstance: pictureInstance])
+		wall(pictureInstance.id)
 	}
 
 	def delete(Long id) {

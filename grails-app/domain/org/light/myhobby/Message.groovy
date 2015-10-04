@@ -33,7 +33,7 @@ class Message {
 		return userFrom.login + " - " + content
 	}
 
-	static mapping = { sort dateCreated: "desc" }
+	static mapping = { sort dateCreated: "asc" }
 
 	/*public static List<Message> getCommentsForOwner(User user, def params = [:]) {
 
@@ -55,6 +55,7 @@ class Message {
 
 	public static def getCommentsForOwner(MessagesOwner owner, def params = [:]) {
 		def messages = (owner.getMessages() ?: []).toList()
+		messages.sort{ it.dateCreated }
 		Integer offset = params.offset ?: 0
 		Integer max = Math.min((params.max ?: 10).toInteger(), 100)
 		Integer maxIndex = Math.min(offset + max, messages.size())

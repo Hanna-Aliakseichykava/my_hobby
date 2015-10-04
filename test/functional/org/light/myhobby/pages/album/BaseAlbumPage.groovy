@@ -12,6 +12,8 @@ class BaseAlbumPage extends HomePage {
         addPictureLink { $("span#addPicture a") }
 		
 		firstPictureLinkText { $("#pictures a").text() }
+
+		deleteButton { $('span#deleteInstance input') }
     }
     
     public void delete() {

@@ -46,7 +46,7 @@ abstract class BaseSpec extends GebReportingSpec {
 		assert loginModule.loginLabel.contains(userLogin)
 	}
 
-	def cleanupSpec() {
+	def logout() {
 		to HomePage
 		assert at(HomePage)
 
@@ -54,5 +54,9 @@ abstract class BaseSpec extends GebReportingSpec {
 
 		assert at(HomePage)
 		assert loginModule.loginLabel.contains("Guest")
+	}
+
+	def cleanupSpec() {
+		logout()
 	}
 }

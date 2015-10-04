@@ -20,7 +20,7 @@ class ShowUserPage extends HomePage {
         createAlbumButton { $("li#createAlbum a") }
         albumLink (required: false) { name -> $("span#albums-list span a", text: contains(name)) }
         
-        editUserButton { $("span[name='editInstance'] a") }
+        editUserButton { $('span#editInstance a') }
         //deleteUserButton { $("span[name='deleteUser'] input") }
     }
 }

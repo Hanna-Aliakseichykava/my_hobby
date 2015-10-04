@@ -14,7 +14,7 @@ class ShowAlbumPage extends BaseAlbumPage {
         descriptionLabel { $("span#description").text() }
         
         userLink { $("span#userLink a") }
-        
-        editButton { $("span#editInstance a") }
+		
+		editButton { $('span#editInstance a') }
     }
 }
